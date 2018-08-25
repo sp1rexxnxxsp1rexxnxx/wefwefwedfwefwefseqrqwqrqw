@@ -26,10 +26,9 @@ client.on('ready', () => {
   console.log('')
 });
 
-client.on('message', message => {
-               if(!message.channel.guild) return message.reply('');
 
 client.on('message', function(message) {
+	if(!message.channel.guild) return message.reply('');
 	const myID = "302354407864139777";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
