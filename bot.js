@@ -26,6 +26,8 @@ client.on('ready', () => {
   console.log('')
 });
 
+client.on('message', message => {
+               if(!message.channel.guild) return message.reply('');
 
 client.on('message', function(message) {
 	const myID = "302354407864139777";
