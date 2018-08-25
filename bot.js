@@ -143,6 +143,19 @@ client.on('voiceStateUpdate', (oldM, newM) => {
     }
   })
 });
-	
+
+var antispam = require("anti-spam");
+ 
+antispam(client, {
+  warnBuffer: 3, 
+  maxBuffer: 5, 
+  interval: 1000, 
+  warningMessage: "stop spamming.", 
+  roleMessage: "Get Muted for spamming", 
+  roleName: "Muted", 
+  maxDuplicatesWarning: 7, 
+  maxDuplicatesBan: 10, 
+  time: 10, 
+}); 
 
 client.login(process.env.BOT_TOKEN);
