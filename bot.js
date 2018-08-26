@@ -124,6 +124,8 @@ client.on('voiceStateUpdate', (oldM, newM) => {
        ch.send(embed)
     }
     if(codes1 === false && codes2 === true) {
+	message.channel.send({embed});
+        embed.setDescription("help message goes here")
        let embed = new Discord.RichEmbed()
        .setAuthor(`${newM.user.tag}`, newM.user.avatarURL)
        .setDescription(`${newM} تم إعطآئه ديفن أو سمآعهه`)
@@ -131,12 +133,6 @@ client.on('voiceStateUpdate', (oldM, newM) => {
         .setColor('#36393e')
        .setTimestamp()
        ch.send(embed)
-       .addField("Title", "بوآسطه : ${user}")
-    message.channel.send({embed});
-  color: 3447003,
-  description: "A very simple Embed!"
-	    
-}});
     }
     if(codes1 === true && codes2 === false) {
        let embed = new Discord.RichEmbed()
