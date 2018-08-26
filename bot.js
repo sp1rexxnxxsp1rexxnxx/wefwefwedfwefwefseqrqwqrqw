@@ -101,7 +101,7 @@ client.on('voiceStateUpdate', (oldM, newM) => {
   let rebel2 = newM.serverMute;
   let codes1 = oldM.serverDeaf;
   let codes2 = newM.serverDeaf;
-  let ch = oldM.guild.channels.find('name', 'voicelog')
+  let ch = oldM.guild.channels.find('name', 'log')
   if(!ch) return;
     oldM.guild.fetchAuditLogs()
     .then(logs => {
