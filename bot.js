@@ -110,7 +110,7 @@ client.on('voiceStateUpdate', (oldM, newM) => {
        let embed = new Discord.RichEmbed()
        .setAuthor(`${newM.user.tag}`, newM.user.avatarURL)
        .setDescription(`${newM} تم إعطآئه ميوت صوتي`)
-       .addField("**By:**",  '**[ ' + `${executor.user.tag}` + ' ]**')
+       .addField("**By:**",  '**[ ' + `${user.user.tag}` + ' ]**')
         .setColor('#36393e')
        ch.send(embed)
     }
