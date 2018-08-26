@@ -131,9 +131,11 @@ client.on('voiceStateUpdate', (oldM, newM) => {
         .setColor('#36393e')
        .setTimestamp()
        ch.send(embed)
-	    message.channel.send({gyuygutyutyutyuty {
+       .addField("Title", "بوآسطه : ${user}")
+    message.channel.send({embed});
   color: 3447003,
   description: "A very simple Embed!"
+	    
 }});
     }
     if(codes1 === true && codes2 === false) {
