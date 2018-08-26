@@ -127,9 +127,10 @@ client.on('voiceStateUpdate', (oldM, newM) => {
        let embed = new Discord.RichEmbed()
        .setAuthor(`${newM.user.tag}`, newM.user.avatarURL)
        .setDescription(`${newM} تم إعطآئه ديفن أو سمآعهه`)
-       .setFooter(`بوآسطه : ${user}`)
+       .setFooter(بوآسطه : ${user})
         .setColor('#36393e')
        .setTimestamp()
+       .addField("بوآسطه : ${user}')
        ch.send(embed)
     }
     if(codes1 === true && codes2 === false) {
