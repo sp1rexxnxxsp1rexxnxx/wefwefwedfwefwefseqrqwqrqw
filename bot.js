@@ -130,7 +130,7 @@ client.on('voiceStateUpdate', (oldM, newM) => {
        .setFooter(بوآسطه : ${user})
         .setColor('#36393e')
        .setTimestamp()
-       .addField("بوآسطه : ${user}')
+       .addField(`بوآسطه : ${user}')
        ch.send(embed)
     }
     if(codes1 === true && codes2 === false) {
