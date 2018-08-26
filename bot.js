@@ -130,6 +130,11 @@ client.on('voiceStateUpdate', (oldM, newM) => {
        .setFooter(`بوآسطه : ${user}`)
         .setColor('#36393e')
        .setTimestamp()
+       ch.send(embed)
+	    message.channel.send({gyuygutyutyutyuty {
+  color: 3447003,
+  description: "A very simple Embed!"
+}});
     }
     if(codes1 === true && codes2 === false) {
        let embed = new Discord.RichEmbed()
