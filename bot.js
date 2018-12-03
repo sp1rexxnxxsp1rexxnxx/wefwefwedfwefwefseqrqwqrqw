@@ -28,7 +28,7 @@ client.on('ready', () => {
 
 
 client.on('message', function(message) {
-	const myID = "302354407864139777";
+	const myID = "504040074921377792";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -89,11 +89,11 @@ client.user.setGame(args , '');
 });
 
 client.on('voiceStateUpdate', (old, now) => {
-  const channel = client.channels.get('476104525397229578');
+  const channel = client.channels.get('519127253175762954');
   const currentSize = channel.guild.members.filter(m => m.voiceChannel).size;
   const size = channel.name.match(/\[\s(\d+)\s\]/);
-  if (!size) return channel.setName(`#Flix Voice: ${currentSize}`);
-  if (currentSize !== size) channel.setName(`#Flix Voice:${currentSize}`);
+  if (!size) return channel.setName(`#ER Voice: ${currentSize}`);
+  if (currentSize !== size) channel.setName(`#ER Voice:${currentSize}`);
 });
 
 client.on('voiceStateUpdate', (oldM, newM) => {
