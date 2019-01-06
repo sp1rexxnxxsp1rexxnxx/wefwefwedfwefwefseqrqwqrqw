@@ -89,11 +89,11 @@ client.user.setGame(args , '');
 });
 
 client.on('voiceStateUpdate', (old, now) => {
-  const channel = client.channels.get('519127253175762954');
+  const channel = client.channels.get('531445108609122305');
   const currentSize = channel.guild.members.filter(m => m.voiceChannel).size;
   const size = channel.name.match(/\[\s(\d+)\s\]/);
   if (!size) return channel.setName(`#ER Voice: ${currentSize}`);
-  if (currentSize !== size) channel.setName(`#ER Voice:${currentSize}`);
+  if (currentSize !== size) channel.setName(`#M8 Voice:${currentSize}`);
 });
 
 client.on('voiceStateUpdate', (oldM, newM) => {
